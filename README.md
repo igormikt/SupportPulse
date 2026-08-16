@@ -5,7 +5,7 @@ MVP-сервис классификации обращений пользова�
 
 ## 📋 Требования
 
-- **Python 3.11+**
+- **Python 3.10+**
 - **Платформа:** Windows 11 / macOS / Linux
 - **VPS (опционально):** Ubuntu/Debian, Docker, Docker Compose
 - **Аккаунт:** [ProxyAPI](https://proxyapi.ru) (для работы ИИ)
