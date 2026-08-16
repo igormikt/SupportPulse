@@ -1,0 +1,17 @@
+services:
+  supportpulse:
+    build: .
+    env_file: .env
+    volumes:
+      - ./data:/app/data
+    restart: always
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - supportpulse
+    restart: always
