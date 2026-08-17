@@ -1,20 +1,17 @@
-version: '3.8'
-
 services:
-  # 1. Наш сервис SupportPulse
   supportpulse:
-    build: .                # Собрать образ из текущего Dockerfile
-    ports:
-      - "8001:8000"         # Порт 8001 на сервере -> порт 8000 внутри контейнера
-    env_file:
-      - .env                # Подгружаем ключи из .env
+    build: .
+    env_file: .env
     volumes:
-      - ./data:/app/data    # Сохраняем базу данных (SQLite) на сервере (чтобы не терялась при перезапуске)
-    restart: always         # Если упадет — перезапускаем автоматически
+      - ./data:/app/data
+    restart: always
 
-  # 2. Здесь в будущем будут другие проекты
-  # Пример:
-  # telegram-bot:
-  #   build: ./telegram-bot
-  #   ports:
-  #     - "8002:8000"
+  nginx:
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - supportpulse
+    restart: always
