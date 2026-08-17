@@ -1,10 +1,10 @@
+# SupportPulse — Сервис обработки обращений (MVP)
+
 <p align="center">
   <a href="https://github.com/igormikt/SupportPulse ">
     <img src="assets/images/overview.png" width="850" alt=" Support Pulse Overview"/>
   </a>
 </p>
-
-# SupportPulse — Сервис обработки обращений (MVP)
 
 MVP-сервис классификации обращений пользователей с помощью ИИ. 
 Автоматически определяет тему обращения, генерирует ответ и сохраняет историю в базу данных.
