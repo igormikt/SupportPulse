@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://github.com/igormikt/SupportPulse ">
+    <img src="assets/images/overview.png" width="850" alt=" Support Pulse Overview"/>
+  </a>
+</p>
+
 # SupportPulse — Сервис обработки обращений (MVP)
 
 MVP-сервис классификации обращений пользователей с помощью ИИ. 
@@ -86,6 +92,11 @@ python -m uvicorn app.main:app --reload
   "escalate": false
 }
 ```
+<p align="center">
+  <a href="https://github.com/igormikt/SupportPulse/blob/main/assets/images/testusi.png ">
+    <img src="assets/images/testusi.png" width="850" alt="Test Swagger UI"/>
+  </a>
+</p>
 
 ### Способ 2: Через терминал (Python)
 Используйте этот способ для проверки в консоли.
@@ -95,6 +106,11 @@ python -m uvicorn app.main:app --reload
 curl.exe http://127.0.0.1:8000/health
 # Ответ: {"status":"ok","version":"1.0.0"}
 ```
+<p align="center">
+  <a href="https://github.com/igormikt/SupportPulse/blob/main/assets/images/test.png ">
+    <img src="assets/images/test.png" width="850" alt="Support Pulse Test"/>
+  </a>
+</p>
 
 **Тест 2: Отправка обращения**
 ```powershell
